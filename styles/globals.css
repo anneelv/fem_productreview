@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: hsl(30, 38%, 92%);
+}
+
+.textMont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textFrau{
+  font-family: 'Fraunces', sans-serif;
+}
+
+.textVDB{
+  color: hsl(212, 21%, 14%);
+}
+
+.textDGB{
+  color: hsl(228, 12%, 48%);
+}
+
+.btn{
+  @apply py-2 px-12 md:px-20 rounded text-white w-full h-10 md:h-16 md:text-xl;
+}
+.btn-cyan{
+  background-color: hsl(158, 36%, 37%);
+}
+.btn-cyan:hover{
+  background-color: hsl(158, 48%, 14%);
+}
+.textDC{
+  color: hsl(158, 36%, 37%);
 }
